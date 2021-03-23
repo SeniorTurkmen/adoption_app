@@ -8,21 +8,21 @@ screen size with multipliers. This will allow to keep the original
 design on every screen size including ipad amd tablet.
  */
 
-class SizeConfig{
-  late double _screenWidth;
-  late double _screenHeight;
-  late double _blockSizeHorizontal;
-  late double _blockSizeVertical;
+class SizeConfig {
+  static late double _screenWidth;
+  static late double _screenHeight;
+  static late double _blockSizeHorizontal;
+  static late double _blockSizeVertical;
 
-  late Orientation orientation;
-  late double text;
-  late double image;
-  late double height;
-  late double width;
-  late double maxWidth;
-  late double maxHeight;
+  static late Orientation orientation;
+  static late double text;
+  static late double image;
+  static late double height;
+  static late double width;
+  static late double maxWidth;
+  static late double maxHeight;
 
-  SizeConfig.init(BoxConstraints constraints, Orientation _orientation) {
+  void init(BoxConstraints constraints, Orientation _orientation) {
     orientation = _orientation;
     if (_orientation == Orientation.portrait) {
       _screenWidth = constraints.maxWidth;
