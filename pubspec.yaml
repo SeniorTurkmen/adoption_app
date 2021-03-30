@@ -13,6 +13,7 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   flutter_svg: ^0.21.0-nullsafety.0
+  google_fonts: ^2.0.0
   json_annotation: ^4.0.0
   json_serializable: ^4.0.3
   pedantic: ^1.11.0
@@ -29,3 +30,12 @@ flutter:
   assets:
     - assets/svg/
     - assets/image/
+
+  fonts:
+    - family: Effra
+      fonts:
+        - asset: assets/fonts/Effra_Std_Lt.ttf
+          weight: 200
+        - asset: assets/fonts/Effra_Std_Bd.ttf
+          weight: 900
+        - asset: assets/fonts/Effra_Std_Rg.ttf
