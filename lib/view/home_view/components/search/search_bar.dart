@@ -1,7 +1,7 @@
+import 'package:adoption_app/core/core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../../../core/util/extension/context_extensions.dart';
 
 class SearchBar extends StatelessWidget {
   const SearchBar({

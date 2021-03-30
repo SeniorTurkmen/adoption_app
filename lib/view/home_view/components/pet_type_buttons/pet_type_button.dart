@@ -1,10 +1,8 @@
+import 'package:adoption_app/core/core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../../../core/models/pet_type_button_model.dart';
-import '../../../../core/util/extension/context_extensions.dart';
-import '../../view_model/functions/button_functions.dart';
-import '../../view_model/home_view_model.dart';
+import '../../../view.dart';
 
 class PetTypeButtons extends StatelessWidget {
   final HomeViewModel home;

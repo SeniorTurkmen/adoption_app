@@ -14,12 +14,17 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Don\'t Buy! Adopt',
-      home: Main(),
+      routes: {
+        Main.routeName: (_) => Main(),
+        Home.routeName: (_) => Home(),
+      },
+      initialRoute: Main.routeName,
     );
   }
 }
 
 class Main extends StatelessWidget {
+  static String routeName = '/';
   const Main({
     Key? key,
   }) : super(key: key);
@@ -41,7 +46,9 @@ class Main extends StatelessWidget {
             providers: [
               ChangeNotifierProvider(create: (_) => HomeViewModel()),
             ],
-            builder: (ctx, child) => Home(),
+            builder: (ctx, child) {
+              return Home();
+            },
           );
         },
       ),
