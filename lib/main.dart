@@ -1,10 +1,10 @@
-import 'package:adoption_app/view/home_view/view_model/home_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
 import 'core/core.dart';
 import 'view/home_view/home.dart';
+import 'view/home_view/view_model/home_view_model.dart';
 
 void main() => runApp(App());
 
@@ -13,7 +13,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Material App',
+      title: 'Don\'t Buy! Adopt',
       home: Main(),
     );
   }
