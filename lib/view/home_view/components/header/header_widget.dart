@@ -1,5 +1,6 @@
-import 'package:adoption_app/core/core.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../core/core.dart';
 
 
 class HeaderWidget extends StatelessWidget {
