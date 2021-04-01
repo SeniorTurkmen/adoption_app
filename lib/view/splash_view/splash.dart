@@ -23,7 +23,7 @@ class _SplashViewState extends State<SplashView> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: LinearProgressIndicator(),
+        child: CircularProgressIndicator(),
       ),
     );
   }

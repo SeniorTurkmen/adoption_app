@@ -47,6 +47,7 @@ class Home extends StatelessWidget {
       Expanded(flex: 2, child: PetTypeButtons(home: home)),
       Expanded(flex: 5, child: NearbyPets()),
       Expanded(flex: 3, child: DonateUs()),
+      Expanded(child: Container()),
     ];
   }
 
