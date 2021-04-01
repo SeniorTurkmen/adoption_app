@@ -1,17 +1,12 @@
+import 'package:adoption_app/core/core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
 
-import '../../core/util/extension/context_extensions.dart';
-import 'components/donate_us.dart';
-import 'components/header/header_widget.dart';
-import 'components/nearby_pets/nearby_pets_widget.dart';
-import 'components/pet_type_buttons/pet_type_button.dart';
-import 'components/search/search_bar.dart';
-import 'view_model/home_view_model.dart';
+import 'home_view.dart';
 
 class Home extends StatelessWidget {
-  static String routeName = '/home';
+  static String routeName = '/';
   const Home({Key? key}) : super(key: key);
 
   @override
@@ -52,7 +47,6 @@ class Home extends StatelessWidget {
       Expanded(flex: 2, child: PetTypeButtons(home: home)),
       Expanded(flex: 5, child: NearbyPets()),
       Expanded(flex: 3, child: DonateUs()),
-      Expanded(flex: 1, child: Container())
     ];
   }
 
