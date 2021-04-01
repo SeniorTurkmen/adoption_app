@@ -72,7 +72,7 @@ class DonateUs extends StatelessWidget {
         clipBehavior: Clip.antiAliasWithSaveLayer,
         clipper: QuadraticClipper(),
         child: Image.asset(
-          'image/cat7.png',
+          'assets/image/cat7.png',
           fit: BoxFit.fitWidth,
         ));
   }

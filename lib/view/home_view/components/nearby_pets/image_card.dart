@@ -25,7 +25,7 @@ class ImageCard extends StatelessWidget {
 
   Image _image() {
     return Image.asset(
-      'image/cat4.png',
+      'assets/image/cat4.png',
       fit: BoxFit.fitWidth,
     );
   }
