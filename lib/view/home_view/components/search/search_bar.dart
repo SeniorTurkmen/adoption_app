@@ -21,7 +21,7 @@ class SearchBar extends StatelessWidget {
         children: [
           Icon(Icons.search),
           Expanded(child: _searchField(context)),
-          SvgPicture.asset('svg/mic.svg'),
+          SvgPicture.asset(SvgConstant.instance.mic),
         ],
       ),
     );

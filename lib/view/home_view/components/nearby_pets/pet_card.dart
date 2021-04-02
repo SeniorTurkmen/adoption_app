@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../../../../core/core.dart';
 import '../../../../core/util/extension/context_extensions.dart';
 import 'image_card.dart';
 
@@ -50,7 +51,10 @@ class PetCard extends StatelessWidget {
 
   Row awayFrom() {
     return Row(
-      children: [SvgPicture.asset('svg/navigation.svg'), Text(' 0.7km away')],
+      children: [
+        SvgPicture.asset(SvgConstant.instance.navigation),
+        Text(' 0.7km away')
+      ],
     );
   }
 }

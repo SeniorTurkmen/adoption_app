@@ -56,7 +56,7 @@ class Home extends StatelessWidget {
       leadingWidth: context.width * 10,
       backgroundColor: Theme.of(context).canvasColor,
       shadowColor: Colors.transparent,
-      leading: SvgPicture.asset('svg/paw.svg'),
+      leading: SvgPicture.asset(SvgConstant.instance.logo),
     );
   }
 }

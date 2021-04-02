@@ -1,4 +1,3 @@
-
 class SvgConstant {
   static SvgConstant instance = SvgConstant._init();
   SvgConstant._init();
@@ -11,4 +10,7 @@ class SvgConstant {
   final activeNotification = 'assets/svg/activeNotification.svg';
   final activeMessage = 'assets/svg/activeMessage.svg';
   final activeProfile = 'assets/svg/activeProfile.svg';
+  final logo = 'assets/svg/paw.svg';
+  final mic = 'assets/svg/mic.svg';
+  final navigation = 'assets/svg/navigation.svg';
 }

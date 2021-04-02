@@ -39,10 +39,13 @@ class DonateUs extends StatelessWidget {
 
   Center _textSection(BuildContext context) {
     return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[_title(context), _subTitle(context)],
+      child: Padding(
+        padding: EdgeInsets.only(left: 8.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[_title(context), _subTitle(context)],
+        ),
       ),
     );
   }
